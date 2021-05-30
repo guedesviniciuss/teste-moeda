@@ -1,7 +1,7 @@
 # Api cotação dolar por data com graphql
 > Esse microserviço consultar a cotação do dolar de uma determinada data. Além de consultar a data, ele mante o historico de consultas e suas respectivas cotações de acordo com a data do pedido.
 
-## Architecture cotacaodolar-api
+## Arquitetura cotacaodolar-api
 
 ![](/doc/img/modelo-arquitetura.png)
 
@@ -35,7 +35,7 @@ Para a utilização dessa api, você precisará ter o postgres instalado. Para i
 $ sudo apt install postgresql postgresql-contrib
 ```
 
-## Installation
+## Instalação
 
 Dentro da diretorio do projeto execute os seguintes comandos:
 
@@ -48,7 +48,7 @@ Esse comando será responsavel por criar as tabelas necessarias para a utilizaç
 npm run typeorm migration:run
 ```
 
-## Running
+## Executando
 
 Para executar a aplicação em modo de desenvolvimento basta executar os comandos abaixo:
 
@@ -56,7 +56,7 @@ Para executar a aplicação em modo de desenvolvimento basta executar os comando
 npm run dev
 ```
 
-## Usage example
+## Exemplos de uso
 
 A api foi desenvolvida em graphql, dessa maneira as requisições serão feitas para o recurso `/graphql` com o verbo `POST`. Para utilizar o unico recurso desenvolvido por essa api, basta enviar uma requisição do tipo query, com os seguintes dados:
 
