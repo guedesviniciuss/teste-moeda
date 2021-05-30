@@ -1,0 +1,15 @@
+type CotacaoDolar {
+  id: String!
+  cotacaoCompra: Float!
+  cotacaoVenda: Float!
+  dataHoraCotacao: String!
+  dataCotacaoDolar: String!
+  timestamp: String!
+}
+
+type CotacaoDolarError {
+  message: String!
+  statusCode: Int!
+}
+
+union CotacaoResult = CotacaoDolar | CotacaoDolarError

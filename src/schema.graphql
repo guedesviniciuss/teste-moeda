@@ -1,0 +1,5 @@
+#import CotacaoResult from './shared.graphql'
+
+type Query {
+  cotacaoDolar(date: String): CotacaoResult
+}
